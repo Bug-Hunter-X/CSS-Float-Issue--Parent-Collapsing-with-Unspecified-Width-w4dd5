@@ -1,0 +1,10 @@
+The following CSS rule may cause unexpected behavior in some browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+This can occur when the parent container doesn't have an explicitly set width.  The `float: left;` property will cause the div to take up only the necessary width (50%), but the parent will collapse if its width isn't specified.
